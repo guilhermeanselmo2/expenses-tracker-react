@@ -1,0 +1,33 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.rulers": [100],
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "files.exclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.idea/*/**": true,
+    "**/node_modules/*/**": false
+  },
+  "search.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.idea/*/**": true,
+    "**/.po": true,
+    "**/.svg": true,
+    "**/.svn": true,
+    "**/bower_components": true,
+    "**/coverage/**/*.*": true,
+    "**/node_modules": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "testify.additionalArgs": "--require @gupy/test-utils/MochaBootstrap --no-timeout",
+  "testify.envVars": {
+    "TS_NODE_TRANSPILE_ONLY": "true"
+  },
+  "testify.skipFiles": ["../../../node_modules/**/*.js"]
+}
